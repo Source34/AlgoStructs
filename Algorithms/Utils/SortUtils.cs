@@ -1,15 +1,22 @@
 ﻿namespace Algorithms.Utils
 {
-    internal static class SortUtils
+    public static class SortUtils
     {
-        internal static bool IsGreater(int x, int y)
+        public static bool IsGreater(int x, int y)
         {
             return x > y;
         }
-
-        internal static bool IsLess(int x, int y)
+        public static bool IsGreaterOrEqual(int x, int y)
+        {
+            return x > y || x == y;
+        }
+        public static bool IsLess(int x, int y)
         {
             return x < y;
+        }
+        public static bool IsLessOrEqual(int x, int y)
+        {
+            return x < y || x == y;
         }
 
         internal static bool IsGreater(float x, float y)
