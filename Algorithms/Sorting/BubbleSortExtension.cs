@@ -4,8 +4,6 @@ namespace Algorithms.Sorting
 {
     public static class BubbleSortExtension
     {
-        private delegate bool Compare(int a, int b);
-
         public static IEnumerable<int> BubbleSort(this IEnumerable<int> data, SortDirection direction = SortDirection.Descending)
         {
             Compare compare = direction == SortDirection.Descending ? SortUtils.IsLess : SortUtils.IsGreater;
