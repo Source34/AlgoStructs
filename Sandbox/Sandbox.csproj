@@ -7,4 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Algorithms.Tests\Algorithms.Tests.csproj" />
+    <ProjectReference Include="..\Algorithms\Algorithms.csproj" />
+  </ItemGroup>
+
 </Project>

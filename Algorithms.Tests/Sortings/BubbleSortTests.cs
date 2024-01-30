@@ -1,8 +1,8 @@
 using Algorithms.Utils;
-using Algorithms.Sorting;
+using Algorithms.Sortings;
 using Algorithms.Tests.Utils;
 
-namespace Algorithms.Tests
+namespace Algorithms.Tests.Sortings
 {
     public class BubbleSortTests
     {

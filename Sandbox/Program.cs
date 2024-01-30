@@ -1,10 +1,18 @@
-﻿namespace Sandbox
+﻿using Algorithms.Sortings;
+using Algorithms.Tests.Utils;
+using Algorithms.Utils;
+
+namespace Sandbox
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            var data = TestDataGenerator.GetIntCollection(100);
+            var res = data.QuickSort(SortDirection.Descending);
+
+            foreach (var item in res)
+                Console.WriteLine(item);
         }
     }
 }

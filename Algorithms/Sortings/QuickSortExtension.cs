@@ -1,6 +1,6 @@
 ﻿using Algorithms.Utils;
 
-namespace Algorithms.Sorting
+namespace Algorithms.Sortings
 {
     public static class QuickSortExtension
     {

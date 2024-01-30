@@ -4,11 +4,11 @@ namespace Algorithms.Tests.Utils
 {
     internal static class SortValidator
     {
-        private delegate bool Compare(int a, int b);
-
         internal static bool IsSortedIntCollection(IEnumerable<int> collection, SortDirection direction)
         {
-            Compare isCompareCondition = direction == SortDirection.Descending ? SortUtils.IsGreaterOrEqual : SortUtils.IsLessOrEqual;
+            Compare isCompareCondition = 
+                direction == SortDirection.Descending ? SortUtils.IsGreaterOrEqual : SortUtils.IsLessOrEqual;
+
             var arrCollection = collection.ToArray();
             var size = arrCollection.Length;
 

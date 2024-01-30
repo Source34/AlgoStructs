@@ -1,4 +1,4 @@
 ﻿namespace Algorithms.Utils
 {
-    internal delegate bool Compare(int a, int b);
+    public delegate bool Compare(int a, int b);
 }
